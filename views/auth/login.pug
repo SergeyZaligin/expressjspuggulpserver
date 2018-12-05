@@ -1,0 +1,13 @@
+extends ../layout
+block content
+  div.container
+    h1 Вход на сайт
+    form(method="post", action="/auth/login")
+      div.form-control
+        label Email
+        input(type="email", name="email")
+      div.form-control
+        label Пароль
+        input(type="password", name="password")
+      div.form-control
+        button(type="submit") Войти

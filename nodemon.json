@@ -1,0 +1,10 @@
+{
+    "ignore": ["node_modules", "dev", "public"],
+    "env": {
+        "NODE_ENV": "development",
+        "PORT": 3777,
+        "MONGO_URL": "mongodb://localhost/agencytop"
+    },
+    "ext": ".js,.json",
+    "watch": "./"
+}

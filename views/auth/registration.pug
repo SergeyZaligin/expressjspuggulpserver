@@ -1,0 +1,26 @@
+extends ../layout
+block content
+  div.container
+    p.message
+    h1 Зарегистрироваться
+    form(method="post", action="/auth/registration")#signup-form
+      div.form-control
+        label Имя на сайте
+        input(type="text", name="nickname")
+      div.form-control
+        label Email
+        input(type="email", name="email")
+      div.form-control
+        label Пароль
+        input(type="password", name="password")
+      div.form-control
+        label Повторить пароль
+        input(type="password", name="password")
+      div.form-control
+        label Роль на сайте
+        select(name="role")
+          option(value="register", checked) Пользователь  
+          option(value="aspirant") Соискатель
+          option(value="recruter") Агентство
+      div.form-control
+        button(type="submit") Зарегистрироваться
